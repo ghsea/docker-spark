@@ -2,7 +2,7 @@
 
 set -e
 
-TAG=2.4.5-hadoop2.7
+TAG=seafix-3.2.1-hadoop2.7
 
 build() {
     NAME=$1
