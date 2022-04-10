@@ -5,7 +5,7 @@ LABEL maintainer="Gezim Sejdiu <g.sejdiu@gmail.com>, Giannis Mouchakis <gmouchak
 ARG SBT_VERSION
 ENV SBT_VERSION=${SBT_VERSION:-1.2.6}
 
-RUN wget -O - https://piccolo.link/sbt-1.2.6.tgz | gunzip | tar -x -C /usr/local
+RUN wget -O - https://github.com/sbt/sbt/releases/download/v1.2.6/sbt-1.2.6.tgz | gunzip | tar -x -C /usr/local
 
 ENV PATH /usr/local/sbt/bin:${PATH}
 
